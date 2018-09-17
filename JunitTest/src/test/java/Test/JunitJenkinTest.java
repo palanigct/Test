@@ -23,5 +23,12 @@ public class JunitJenkinTest {
 		int b=2;
 		assertEquals(a+b, 3);
 	}
+	
+	@Test
+	public void testfail2() {
+		int a=1;
+		int b=2;
+		assertEquals(a+b, 3);
+	}
 
 }

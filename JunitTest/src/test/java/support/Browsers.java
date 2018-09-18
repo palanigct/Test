@@ -33,12 +33,12 @@ public class Browsers {
 	}
 
 	private static WebDriver createIEDriver() {
-		//System.setProperty("webdriver.ie.driver", "//src//main//resources//IEDriver//IEDriverServer.exe");
+		System.setProperty("webdriver.ie.driver", "//src//main//resources//IEDriver//IEDriverServer.exe");
 		return new InternetExplorerDriver();
 	}
 
 	private static WebDriver createChromeDriver() {		
-		//System.setProperty("webdriver.chrome.driver", "src//main//resources//ChromeDriver//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src//main//resources//ChromeDriver//chromedriver.exe");
 		return new ChromeDriver();
 	}
 

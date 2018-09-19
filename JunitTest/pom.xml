@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>JunitTest</groupId>
 	<artifactId>JunitTest</artifactId>
-	<version>0.0.1-SNAPSHOT</version>	
+	<version>0.0.1-SNAPSHOT</version>
 	<name>TestAutoTool</name>
 
 
@@ -73,6 +73,21 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>0.4.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/net.masterthought/maven-cucumber-reporting -->
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>maven-cucumber-reporting</artifactId>
+			<version>0.0.2</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
@@ -91,8 +106,8 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.20</version>
 					<configuration>
-					<!-- <testClassesDirectory>s360UIAutomationCC/src/main/java</testClassesDirectory> -->
-					<testSourceDirectory>JunitTest/src/main/java</testSourceDirectory> 
+						<!-- <testClassesDirectory>s360UIAutomationCC/src/main/java</testClassesDirectory> -->
+						<testSourceDirectory>JunitTest/src/main/java</testSourceDirectory>
 						<includes>
 							<include>**/*RunCukesTest.java</include>
 						</includes>
@@ -102,7 +117,7 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	
+
 
 
 </project>

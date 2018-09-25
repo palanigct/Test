@@ -9,7 +9,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import support.Driver;
 
-public class stepdeffinition extends Driver{	
+public class stepDefinition extends Driver{	
 	
 	@Given("^I navigate to the browser homepage$")
 	public void i_navigate_to_the_browser_homepage() throws Throwable {
